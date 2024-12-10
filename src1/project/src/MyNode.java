@@ -1,3 +1,5 @@
+// testing strict long transaction support
+
 package tree;
 
 /**
@@ -101,12 +103,12 @@ public class MyNode {
    */
   public int calcSize() {
     int cnt = 1;
-    if(left != null) {
+    if (left != null) {
       cnt += left.calcSize();
     }
-    if(right != null) {
+    if (right != null) {
       cnt += right.calcSize();
     }
     return cnt;
   }
-} 
+}
